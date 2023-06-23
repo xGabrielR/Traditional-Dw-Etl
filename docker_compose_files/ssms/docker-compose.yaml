@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  sql_server:
+    image: luizcarlosfaria/mssql-server-linux:2019-latest
+    user: root
+    environment:
+      ACCEPT_EULA: 1
+      SA_PASSWORD: 8k3W2C2BVzAW9p
+      MSSQL_DATABASE: DW
+      MSSQL_DATABASE_COLLATE: SQL_Latin1_General_CP1_CI_AI
+      MSSQL_USER: admin_dw
+      MSSQL_PASSWORD: 123a
+    ports:
+      - 1433:1433
+    volumes:
+      - "./ssms_db:/var/opt/mssql/data"

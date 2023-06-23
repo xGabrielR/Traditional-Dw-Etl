@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: 123
+      MYSQL_ALLOW_EMPTY_PASSWORD: yes
+      MYSQL_RANDOM_ROOT_PASSWORD: yes 
+      MYSQL_DATABASE: integracao
+      MYSQL_USER: user_integracao
+      MYSQL_PASSWORD: 123b
+    ports:
+      - 3306:3306
+    volumes:
+      - "./mysql_db:/var/lib/mysql"

@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  postgres:
+    image: postgres:15.2
+    environment:
+      POSTGRES_USER: user_psql
+      POSTGRES_PASSWORD: 123c
+      POSTGRES_DB: integracao
+    ports:
+      - 5432:5432
+    volumes:
+      - "./psql_db:/var/lib/postgresql/data"

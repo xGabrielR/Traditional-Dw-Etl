@@ -1,0 +1,67 @@
+[2023-06-22 20:02:22] | [INFO] | STARTING ETL STAGGING
+[2023-06-22 20:02:22] | [INFO] | run_staggings()
+[2023-06-22 20:02:22] | [INFO] | TIME RUN - 0.0000007
+[2023-06-22 20:02:22] | [INFO] | MEMORY USED - 0.2890625
+[2023-06-22 20:02:22] | [INFO] | START STAGGING: STG_OLS_SELLERS
+[2023-06-22 20:02:22] | [INFO] | START STAGGING: STG_OLS_PRODUCTS
+[2023-06-22 20:02:23] | [INFO] | START STAGGING: STG_OLS_ORDERS
+[2023-06-22 20:02:23] | [INFO] | START STAGGING: STG_OLS_CUSTOMERS
+[2023-06-22 20:02:24] | [INFO] | START STAGGING: STG_OLS_ORDER_ITEMS
+[2023-06-22 20:02:36] | [INFO] | STARTING ETL DMS
+[2023-06-22 20:02:36] | [INFO] | run_schemas()
+[2023-06-22 20:02:36] | [INFO] | TIME RUN - 0.0000030
+[2023-06-22 20:02:36] | [INFO] | MEMORY USED - 0.0
+[2023-06-22 20:02:36] | [INFO] | START STAGGING: D_VENDEDOR
+[2023-06-22 20:02:36] | [INFO] | START STAGGING: D_CLIENTE
+[2023-06-22 20:02:38] | [INFO] | START STAGGING: D_PRODUTO
+[2023-06-22 20:02:38] | [INFO] | START STAGGING: F_ORDEM_ITEM
+[2023-06-22 20:02:42] | [INFO] | PROCESS ENDED
+[2023-06-22 20:04:19] | [INFO] | STARTING ETL STAGGING
+[2023-06-22 20:04:19] | [INFO] | run_staggings()
+[2023-06-22 20:04:19] | [INFO] | TIME RUN - 0.0000006
+[2023-06-22 20:04:19] | [INFO] | MEMORY USED - 0.265625
+[2023-06-22 20:05:12] | [INFO] | STARTING ETL STAGGING
+[2023-06-22 20:05:12] | [INFO] | run_staggings()
+[2023-06-22 20:05:12] | [INFO] | TIME RUN - 0.0000007
+[2023-06-22 20:05:12] | [INFO] | MEMORY USED - 0.2890625
+[2023-06-22 20:05:12] | [INFO] | START STAGGING: STG_OLS_SELLERS
+[2023-06-22 20:05:12] | [CRITICAL] | ERROR, RETRYING...
+FUNCTION ERROR: get_stagging_data, "stg_ols_sellers"
+ERROR: 'OperationalError' object has no attribute 'fetch_all'
+
+[2023-06-22 20:05:17] | [CRITICAL] | ERROR, RETRYING...
+FUNCTION ERROR: get_stagging_data, "stg_ols_sellers"
+ERROR: 'OperationalError' object has no attribute 'fetch_all'
+
+[2023-06-22 20:05:22] | [CRITICAL] | ERROR, RETRYING...
+FUNCTION ERROR: get_stagging_data, "stg_ols_sellers"
+ERROR: 'OperationalError' object has no attribute 'fetch_all'
+
+[2023-06-22 20:05:27] | [CRITICAL] | ERROR, RETRYING...
+FUNCTION ERROR: get_stagging_data, "stg_ols_sellers"
+ERROR: 'OperationalError' object has no attribute 'fetch_all'
+
+[2023-06-22 20:05:32] | [CRITICAL] | ERROR, RETRYING...
+FUNCTION ERROR: get_stagging_data, "stg_ols_sellers"
+ERROR: 'OperationalError' object has no attribute 'fetch_all'
+
+[2023-06-22 20:05:32] | [INFO] | START STAGGING: STG_OLS_PRODUCTS
+[2023-06-22 20:05:32] | [CRITICAL] | ERROR, RETRYING...
+FUNCTION ERROR: get_stagging_data, "stg_ols_products"
+ERROR: 'OperationalError' object has no attribute 'fetch_all'
+
+[2023-06-22 20:05:32] | [INFO] | START STAGGING: STG_OLS_ORDERS
+[2023-06-22 20:05:32] | [CRITICAL] | ERROR, RETRYING...
+FUNCTION ERROR: get_stagging_data, "stg_ols_orders"
+ERROR: 'ConnectionRefusedError' object has no attribute 'fetch_all'
+
+[2023-06-22 20:05:32] | [INFO] | START STAGGING: STG_OLS_CUSTOMERS
+[2023-06-22 20:05:32] | [CRITICAL] | ERROR, RETRYING...
+FUNCTION ERROR: get_stagging_data, "stg_ols_customers"
+ERROR: 'ConnectionRefusedError' object has no attribute 'fetch_all'
+
+[2023-06-22 20:05:32] | [INFO] | START STAGGING: STG_OLS_ORDER_ITEMS
+[2023-06-22 20:05:32] | [CRITICAL] | ERROR, RETRYING...
+FUNCTION ERROR: get_stagging_data, "stg_ols_order_items"
+ERROR: 'ConnectionRefusedError' object has no attribute 'fetch_all'
+
