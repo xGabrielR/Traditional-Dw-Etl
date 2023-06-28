@@ -25,6 +25,8 @@ In a simple Zoom-In on geral pileine whe get this simple process on image:
 There is a folder called "sql", it could be any name, and inside it there are some more subfolders where the queries in SQL to be executed in the database, the staggings folder and schemas (modeling) sql query.
 As we are working on a batch project where the idea is not to load everything from the source and update the Dw/Dm tables, in this case there is the possibility of applying a data filter on the queries to be collected from the OLTP system.
 That is, we will collect data with a time window, for example the last 15 days, or the last 5 days, etc. only the updated data, to update the history that has been fully loaded before and is in the dimensions and facts.
+For Dims and Facts, I need to insert new rows and update existing ones based on this window or full extraction of sources, but I need to keep history on Dm.
+If source change or broken, all the historical data is inside schema table on Dm/Dw.
 
 ### Tools Used
 
