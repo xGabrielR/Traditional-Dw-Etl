@@ -18,9 +18,10 @@ With them we can easily do a lot of things without having to write a lot of code
 
 I tried to develop a solution with asynchronous loads of tables, for quick loads it works very well, I also put a functionality to include a certain processing date (cutoff date for collecting data from the source) so it is possible to limit and make the query faster for the load avoiding several problems.
 
-In a simple Zoon-In on geral pileine whe get this simple process on image:
+In a simple Zoom-In on geral pileine whe get this simple process on image:
 
-![image](https://github.com/xGabrielR/Traditional-Dw-Etl/assets/75986085/0bf0e1da-bc06-4513-b7a3-066a219a7aa6)
+![image](https://github.com/xGabrielR/Traditional-Dw-Etl/assets/75986085/de7ae07c-94c9-46a3-b8a7-f2620c592b2e)
+
 
 
 ### Tools Used
