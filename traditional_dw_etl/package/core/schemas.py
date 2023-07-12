@@ -1,7 +1,7 @@
 import asyncio
 from glob import glob
 from datetime import datetime
-from package.core.staggings import RunStaggings
+from package.core.stagings import RunStagings
 from package.utils.deco_functions import mem_profile
 
 class SetupSchemas(object):
@@ -45,7 +45,7 @@ class SetupSchemas(object):
         
         return schema_paths
     
-class RunSchemas(RunStaggings):
+class RunSchemas(RunStagings):
     """
     Auxiliar Class for Run insert and update query.
     """
@@ -69,7 +69,7 @@ class RunSchemas(RunStaggings):
             datamart = self.schemas_queries[dm]
 
             for table in datamart.keys():
-                print(f'[{datetime.now().strftime("%Y-%m-%d %H:%M:%S")}] | [INFO] | START STAGGING: {table.upper()}', file=open(self._logs_path, 'a'))
+                print(f'[{datetime.now().strftime("%Y-%m-%d %H:%M:%S")}] | [INFO] | START STAGING: {table.upper()}', file=open(self._logs_path, 'a'))
 
                 table_query = datamart[table]
 
