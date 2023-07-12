@@ -31,7 +31,7 @@ def mem_profile(function):
     return closure
 
 
-def retry_get_stagging_data(retry_times=5, time_sleep_per_retry=5, logs_path=f"logs_{datetime.now().strftime('%Y-%m-%d')}.txt"):
+def retry_get_staging_data(retry_times=5, time_sleep_per_retry=5, logs_path=f"logs_{datetime.now().strftime('%Y-%m-%d')}.txt"):
     retry_count = 0
 
     def decorator(function):
