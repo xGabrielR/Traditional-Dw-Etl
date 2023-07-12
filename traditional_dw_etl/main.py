@@ -1,7 +1,7 @@
 import asyncio
 from datetime import datetime
 from package.utils.credentials import credentials
-from package.core.staggings import RunStaggings
+from package.core.stagings import RunStagings
 from package.core.schemas import RunSchemas
 
 from warnings import filterwarnings
@@ -12,12 +12,12 @@ DW_SCHEMAS_PATH = "/home/grc/arep/Traditional-Dw-Etl/sql/dw_schema"
 MYSQL_QUERY_PATH = "/home/grc/arep/Traditional-Dw-Etl/sql/stages_mysql"
 POSTGRESQL_QUERY_PATH = "/home/grc/arep/Traditional-Dw-Etl/sql/stages_postgresql"
 
-stages = RunStaggings(
-    staggings_path=[MYSQL_QUERY_PATH, POSTGRESQL_QUERY_PATH],
+stages = RunStagings(
+    stagings_path=[MYSQL_QUERY_PATH, POSTGRESQL_QUERY_PATH],
     credentials_dict=credentials,
     schema='StgOls',
     logs_path=LOGS_PATH,
-    staggings_backend_config = None
+    stagings_backend_config = None
 )
 
 schemas = RunSchemas(
@@ -27,8 +27,8 @@ schemas = RunSchemas(
 )
 
 async def main():
-    print(f'[{datetime.now().strftime("%Y-%m-%d %H:%M:%S")}] | [INFO] | STARTING ETL STAGGING', file=open(LOGS_PATH, 'a'))
-    await stages.run_staggings()
+    print(f'[{datetime.now().strftime("%Y-%m-%d %H:%M:%S")}] | [INFO] | STARTING ETL STAGING', file=open(LOGS_PATH, 'a'))
+    await stages.run_stagings()
 
     print(f'[{datetime.now().strftime("%Y-%m-%d %H:%M:%S")}] | [INFO] | STARTING ETL DMS', file=open(LOGS_PATH, 'a'))
     await schemas.run_schemas()
