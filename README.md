@@ -20,7 +20,8 @@ I tried to develop a solution with asynchronous loads of tables, for quick loads
 
 In a simple Zoom-In on geral pileine whe get this simple process on image:
 
-![image](https://github.com/xGabrielR/Traditional-Dw-Etl/assets/75986085/de7ae07c-94c9-46a3-b8a7-f2620c592b2e)
+![image](https://github.com/xGabrielR/Traditional-Dw-Etl/assets/75986085/3ed6612c-b843-4ec2-be57-415f13329aef)
+
 
 There is a folder called "sql", it could be any name, and inside it there are some more subfolders where the queries in SQL to be executed in the database, the stagings folder and schemas (modeling) sql query.
 As we are working on a batch project where the idea is not to load everything from the source and update the Dw/Dm tables, in this case there is the possibility of applying a data filter on the queries to be collected from the OLTP system.
